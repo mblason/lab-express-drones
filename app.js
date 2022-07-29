@@ -15,6 +15,13 @@ const hbs = require("hbs");
 
 const app = express();
 
+// ℹ️ global package used to `normalize` paths amongst different operating systems
+// https://www.npmjs.com/package/path
+const path = require("path");
+
+// Register the location for handlebars partials here:
+hbs.registerPartials(path.join(__dirname + "/views/partials"));
+
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
 require("./config")(app);
 

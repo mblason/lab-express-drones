@@ -1,8 +1,156 @@
-body {
-  padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;800&family=Montserrat:wght@100;200;300;800&family=Poppins:wght@100;200;500&family=Roboto+Mono:wght@200;300;400;700&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-a {
-  color: #00b7ff;
+/* NAVBAR */
+#navbar {
+  background-color: rgb(15, 15, 15);
+  height: 50px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  height: 50px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* HOME */
+
+#home-container {
+  height: 100vh;
+  background-image: url('/images/drone-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-container h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 250px;
+}
+
+/* DRONES LIST */
+
+#drones-list-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin: 50px;  
+}
+
+#drones-list-head h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#drones-list-head a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(31, 36, 27);
+  color: white;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#btns-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.card-group a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 59, 1);
+  color: white;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.card-group button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(68, 4, 4);
+  color: white;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  border-color: rgb(68, 4, 4);
+  cursor: pointer;
+}
+
+/* CREATE & EDIT FORM */
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-container h2 {
+  width: 350px;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#form-container form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#form-container form input {
+    margin-bottom: 20px;
+}
+
+#form-container form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 59, 1);
+  color: white;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  border-color: rgb(27, 59, 1);
+  text-decoration: none;
 }
